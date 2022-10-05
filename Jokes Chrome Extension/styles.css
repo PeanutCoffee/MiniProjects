@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Barrio&family=Limelight&family=Poppins:ital,wght@0,300;0,600;0,700;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Barrio&family=Happy+Monkey&family=Limelight&family=Poppins:ital,wght@0,300;0,600;0,700;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
+
+body {
+    width: 300px;
+    height: 300px;
+    background-color: darkgreen;
+    font-family: 'Happy Monkey', cursive;
+    
+    
+}
+
+h1 {
+    color: rgb(246, 190, 107);
+    margin: auto 5px;
+    margin-top: 20px;
+    font-size: 2rem;
+    font-style: normal;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 2px;
+    font-family: 'Bangers', cursive;
+}
+
+p {
+    color: aliceblue;
+    display: flex;
+    margin: 0px 15px;
+    justify-content: center;
+    font-size: 20px;
+    border-radius: 6px;
+    border: 1px solid rgb(57, 196, 201);
+    padding: 10px;
+}
