@@ -1,0 +1,76 @@
+$date
+	Sun Feb 06 00:47:10 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module alutest $end
+$var wire 1 ! ZR $end
+$var wire 16 " Z [15:0] $end
+$var wire 1 # V $end
+$var wire 1 $ S $end
+$var wire 1 % P $end
+$var wire 1 & CY $end
+$var reg 16 ' X [15:0] $end
+$var reg 16 ( Y [15:0] $end
+$scope module DUT $end
+$var wire 1 # Overflow $end
+$var wire 16 ) X [15:0] $end
+$var wire 16 * Y [15:0] $end
+$var wire 1 ! Zero $end
+$var wire 16 + Z [15:0] $end
+$var wire 1 $ Sign $end
+$var wire 1 % Parity $end
+$var wire 1 & Carry $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx +
+bx *
+bx )
+bx (
+bx '
+x&
+x%
+x$
+x#
+bx "
+x!
+$end
+#5
+1#
+0$
+0!
+1%
+b111111111111 "
+b111111111111 +
+1&
+b1000000000000000 (
+b1000000000000000 *
+b1000111111111111 '
+b1000111111111111 )
+#10
+0#
+1!
+b0 "
+b0 +
+b10 (
+b10 *
+b1111111111111110 '
+b1111111111111110 )
+#15
+1$
+0!
+b1111111111111111 "
+b1111111111111111 +
+0&
+b101010101010101 (
+b101010101010101 *
+b1010101010101010 '
+b1010101010101010 )
+#20
