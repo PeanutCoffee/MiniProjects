@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Barrio&family=Limelight&family=Poppins:ital,wght@0,300;0,600;0,700;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Barrio&family=Happy+Monkey&family=Limelight&family=Poppins:ital,wght@0,300;0,600;0,700;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
 
+/*Formatting the Body*/
 body {
     width: 300px;
     height: 300px;
     background-color: darkgreen;
-    font-family: 'Happy Monkey', cursive;
-    
-    
+    font-family: 'Happy Monkey', cursive;   
 }
 
+/*Formatting H1 type heading*/
 h1 {
     color: rgb(246, 190, 107);
     margin: auto 5px;
@@ -23,6 +23,8 @@ h1 {
     font-family: 'Bangers', cursive;
 }
 
+
+/*Formatting the Paragraph*/
 p {
     color: aliceblue;
     display: flex;
