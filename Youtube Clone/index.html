@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Clone</title>
+    <link rel="shortcut icon" href="./img/yt.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="toggle-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <a href="#"><img src="./img/light.png" class="logo" alt=""></a>
+        <div class="search-box">
+            <input type="text" name="" class="search-bar" placeholder="Search" id="search-bar">
+            <button class="search-btn" id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button class="voice"><box-icon type='solid' name='microphone'></box-icon></button>
+        </div>
+        <div class="user-options">
+            <box-icon name='video-plus' class="icons" ></box-icon>
+            <box-icon type='solid' class="icons" name='grid'></box-icon>
+            <box-icon name='bell' class="icons" ></box-icon>
+            <div class="user-dp">
+                <box-icon name='user-circle'></box-icon>
+            </div>
+        </div>
+    </nav>
 
+    <!-- SIDEBAR -->
+    <div class="side-bar">
+        <a href="#" class="links active"><box-icon name='home' ></box-icon>Home</a>
+        <a href="https://www.youtube.com/feed/explore" class="links"><box-icon name='compass' ></box-icon>Explore</a>
+        <a href="https://www.youtube.com/shorts/bQKnVw7x5S0" class="links"><box-icon name='color'></box-icon>Shorts</a>
+        <a href="https://www.youtube.com/feed/subscriptions" class="links"><box-icon name='tv'></box-icon>Subscriptions</a>
+        <hr class="separator">
+        <a href="https://www.youtube.com/feed/library" class="links"><box-icon type='solid' name='videos'></box-icon>Library</a>
+        <a href="https://www.youtube.com/feed/history" class="links"><box-icon name='history' ></box-icon>History</a>
+        <a href="#" class="links"><box-icon name='carousel' ></box-icon>Your Videos</a>
+        <a href="https://www.youtube.com/playlist?list=WL" class="links"><box-icon name='stopwatch'></box-icon>Watch Later</a>
+        <a href="https://www.youtube.com/playlist?list=LL" class="links"><box-icon name='like' ></box-icon>Liked Videos</a>
+        <a href="#" class="links"><box-icon name='chevron-down' ></box-icon>Show More</a>
+        <p class="credits">&copy 2022 Wilson VD</p>
+    </div>
+
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
