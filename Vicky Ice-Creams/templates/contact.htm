@@ -1,0 +1,24 @@
+{% extends 'base.htm' %}
+
+{% block title %}Contact{% endblock title %}
+
+{% block body %}
+<div class="container-fluid py-3 px-2">
+    <img src="/static/contactt.jpg" width="1500" alt="">
+</div>
+<h1 class="text-center my-5 ">Contact Us Here</h1>
+<div class="container">
+    <form method="POST" action="/contact">
+    {% csrf_token %}
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <input type="text" class="form-control" name="message" id="message">
+        </div>
+        <button type="submit" class="btn btn-dark">Send</button>
+      </form>
+</div>
+{% endblock body %}
