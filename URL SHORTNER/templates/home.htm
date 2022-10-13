@@ -1,0 +1,15 @@
+{% extends "base.htm" %}
+{% block title %}Short The URL{% endblock %}
+
+{% block content %}
+<div class="container d-flex my-3">
+    <form action="#", method="POST">
+        <label for="url">Enter An https:// URL:</label>
+    
+        <input type="url" name="nm" id="url" placeholder="https://example.com" pattern="https://.*" size="50" required>
+        <br>
+        <input type="submit" value="submit" class="btn-dark my-3">
+    
+    </form>
+</div>
+{% endblock %}
