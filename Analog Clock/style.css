@@ -1,0 +1,60 @@
+body
+{
+    background-color: rgb(230, 180, 105);
+}
+#heading
+{
+    position: relative;
+    text-align: center;
+    color: rgb(255, 115, 0);
+    font-family: fantasy;
+    background-color: aqua;
+}
+#container
+{
+    position: relative;
+    margin: auto;
+    height: 40vw;
+    width: 40vw;
+    padding-left: 20px ;
+    background: url(./Clock.jpg) no-repeat;
+    /* border: solid;
+    border-color: tomato; */
+    background-size: 100%;
+
+}
+#hour ,#minute , #second
+{
+    position: absolute ;
+    background: black;
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+#hour
+{
+    width: 2%;
+    height: 17%;
+    top: 32%;
+    left: 49.5%;
+   
+    
+}
+#minute
+{
+    width: 1.5%;
+    height: 23%;
+    top: 26%;
+    left: 49.79%;
+    opacity: 0.5;
+    
+}
+#second
+{    
+    width: 1%;
+    height: 28%;
+    top: 21%;
+    left: 50%;
+    opacity: 0.3;
+    background-color: red;
+}
+
