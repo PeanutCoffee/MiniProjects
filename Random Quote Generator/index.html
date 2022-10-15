@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Google's Favicon servie link -->
+  <link rel="icon" type="image/png" href="https://www.google.com/s2/u/0/favicons?domain=github.com">
+  <!-- font awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <!-- external css -->
+  <link rel="stylesheet" href="style.css">
+  <title>Quote Generator</title>
+</head>
+
+<body>
+  <!-- html -->
+
+  <div class="quote-container" id="quote-container">
+    <!-- quote -->
+    <div class="quote-text">
+      <i class="fas fa-quote-left"></i>
+      <span id="quote">
+        <!-- quote appends here -->
+      </span>
+    </div>
+    <!-- author -->
+    <div class="quote-author">
+      -
+      <span id="author">
+        <!-- author appends here -->
+      </span>
+    </div>
+    <!-- buttons -->
+    <div class="button-container">
+      <button class="twitter-button" id="twitter" title="Tweet this!">
+        <i class="fab fa-twitter"></i>
+      </button>
+      <button id="new-quote">New Quote</button>
+    </div>
+  </div>
+
+  <!-- loader -->
+  <div class="loader" id="loader"></div>
+
+  <!-- script -->
+  <script src="quote.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
