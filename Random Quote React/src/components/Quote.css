@@ -1,0 +1,17 @@
+.quote:not(:first-child) {
+    margin-top: 100px;
+}
+.quote {
+    display: flex;
+    justify-content: space-between;
+}
+.quote .line {
+    background-color: var(--yellow-1);
+    width: 8px;
+    margin-right: calc(var(--mr) - 2px);
+}
+.quote .content {
+    font-size: 36px;
+    font-weight: 500;
+    width: calc(var(--width) - var(--mr));
+}

@@ -26,7 +26,7 @@ A month-long celebration from October 1st - 31st sponsored by [Digital Ocean](ht
 ## How To Contribute to This Project
 
 * Add a project(small scale would work as well).
-To do so, first create an issue with the task you are doing, for example: "Issue - creating QR Code generator in Python". Add the `HacktoberFest 2022` label in the issue and assign the issue to yourself. Create a pull request in response to that issue and finally submit it for review.
+To do so, first create an issue with the task you are doing, for example: "Issue - creating QR Code generator in Python". `HacktoberFest` label will be added to the issue. Create a pull request in response to that issue and finally submit it for review.
 
 * Create a directory for any new project if it doesn't exist.
 	eg. `QR Code Generator`, `News App`.

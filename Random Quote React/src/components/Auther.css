@@ -1,0 +1,42 @@
+.auther {
+    margin-top: 125px;
+    padding-left: calc(var(--mr) - 15px);
+}
+.auther a {
+    display: block;
+    position: relative;
+    padding: 25px 15px;
+    transition: 0.2s;
+}
+.auther a:hover {
+    background-color: var(--black-1);
+}
+.auther a span:nth-child(1) {
+    color: var(--black-2);
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.2s;
+}
+.auther a:hover span:nth-child(1) {
+    color: var(--gray-1);
+}
+.auther a span:nth-child(3) {
+    color: var(--black-3);
+    font-weight: 500;
+    font-size: 14px;
+    transition: 0.2s;
+}
+.auther a svg {
+    float: right;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    opacity: 0;
+    transition: 0.2s;
+    color: var(--gray-1);
+    font-size: 40px;
+    transform: translateY(-50%);
+}
+.auther a:hover svg {
+    opacity: 1;
+}
