@@ -1,0 +1,59 @@
+body {
+    font-family: Raleway, Montserrat;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+input:focus,
+button:focus {
+    outline: none;
+}
+:root {
+    --black-1: #333333;
+    --black-2: #4f4f4f;
+    --black-3: #828282;
+    --gray-1: #f2f2f2;
+    --yellow-1: #f7df94;
+    --width: 400px;
+    --mr: 50px;
+}
+.container {
+    width: var(--width);
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width: 575.98px) {
+    :root {
+        --width: 500px;
+        --mr: 60px;
+    }
+}
+
+@media (min-width: 767.98px) {
+    :root {
+        --width: 600px;
+        --mr: 70px;
+    }
+}
+
+@media (min-width: 991.98px) {
+    :root {
+        --width: 600px;
+        --mr: 80px;
+    }
+}
+
+@media (min-width: 1199.98px) {
+    :root {
+        --width: 700px;
+        --mr: 100px;
+    }
+}
+
