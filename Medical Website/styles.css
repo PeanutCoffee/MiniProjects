@@ -48,9 +48,18 @@ a {
 img {
   max-width: 100%;
 }
+ a:hover{
+  color: black;
+  font-weight: bolder;
+  background-color: white;
+}
 
+a:visited{
+  color: rgb(64, 64, 34);
+}
 li {
   list-style: none;
+  
 }
 
 .container {
