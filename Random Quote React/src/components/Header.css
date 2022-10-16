@@ -1,0 +1,31 @@
+header {
+    margin: 15px 30px;
+}
+header:after {
+    content: "";
+    clear: both;
+    width: 0;
+    height: 0;
+    display: block;
+}
+.random-btn {
+    font-family: Raleway;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    float: right;
+    color: var(--black-2);
+    font-size: 18px;
+    font-weight: 500;
+    height: 50px;
+    border-radius: 9999px;
+    padding: 0 10px;
+}
+.random-btn:hover {
+    background-color: #f2f2f287;
+}
+.random-btn:active {
+    background-color: var(--gray-1);
+}
