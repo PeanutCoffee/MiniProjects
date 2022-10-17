@@ -1,7 +1,4 @@
-body
-{
-    background-color: rgb(230, 180, 105);
-}
+
 #heading
 {
     position: relative;
@@ -57,4 +54,15 @@ body
     opacity: 0.3;
     background-color: red;
 }
+body {
+    padding: 25px;
+    background-color: white;
+    color: black;
+    font-size: 25px;
+  }
+  
+  .dark-mode {
+    background-color: black;
+    color: white;
+  }
 
