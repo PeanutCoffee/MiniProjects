@@ -111,6 +111,9 @@ li {
 .nav.fix-nav .hamburger {
   color: #fff;
 }
+.nav.fix-nav .nav-link{
+  color: black;
+}
 
 .navigation {
   display: flex;
