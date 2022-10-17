@@ -1,0 +1,125 @@
+{
+    response_code: 0,
+    results: [
+    {
+    category: "Entertainment: Music",
+    type: "multiple",
+    difficulty: "easy",
+    question: "Which English guitarist has the nickname &quot;Slowhand&quot;?",
+    correct_answer: "Eric Clapton",
+    incorrect_answers: [
+    "Mark Knopfler",
+    "Jeff Beck",
+    "Jimmy Page"
+    ]
+    },
+    {
+    category: "Entertainment: Music",
+    type: "multiple",
+    difficulty: "easy",
+    question: "Which rap group released the album &quot;Straight Outta Compton&quot;?",
+    correct_answer: "N.W.A",
+    "incorrect_answers": [
+    "Wu-Tang Clan",
+    "Run-D.M.C.",
+    "Beastie Boys"
+    ]
+    },
+    {
+    category: "Entertainment: Music",
+    type: "multiple",
+    difficulty: "easy",
+    question: "Ringo Starr of The Beatles mainly played what instrument?",
+    correct_answer: "Drums",
+    incorrect_answers: [
+    "Bass",
+    "Guitar",
+    "Piano"
+    ]
+    },
+    {
+    category: "Entertainment: Music",
+    type: "multiple",
+    difficulty: "easy",
+    question: "What is the best selling album of all time from 1976 to 2018?",
+    correct_answer: "Thriller",
+    incorrect_answers: [
+    "Back in Black",
+    "Abbey Road",
+    "The Dark Side of the Moon"
+    ]
+    },
+    {
+    category: "Entertainment: Music",
+    type: "multiple",
+    difficulty: "easy",
+    question: "What is the stage name of English female rapper Mathangi Arulpragasam, who is known for the song &quot;Paper Planes&quot;?",
+    correct_answer: "M.I.A.",
+    incorrect_answers: [
+    "K.I.A.",
+    "C.I.A.",
+    "A.I.A."
+    ]
+    },
+    {
+    category: "Entertainment: Music",
+    type: "multiple",
+    difficulty: "easy",
+    question: "What was the subject of the 2014 song &quot;CoCo&quot; by American rapper O. T. Genasis?",
+    correct_answer: "Cocaine",
+    incorrect_answers: [
+    "Conan O&#039;Brien",
+    "Cobalt(II) carbonate",
+    "Coconut cream pie"
+    ]
+    },
+    {
+    category: "Entertainment: Music",
+    type: "multiple",
+    difficulty: "easy",
+    question: "In an orchestra, what is the lowest member of the brass family?",
+    correct_answer: "Tuba",
+    incorrect_answers: [
+    "Trombone",
+    "Contrabass",
+    "Bassoon"
+    ]
+    },
+    {
+    category: "Entertainment: Music",
+    type: "multiple",
+    difficulty: "easy",
+    question: "Kanye West&#039;s &quot;Gold Digger&quot; featured which Oscar-winning actor?",
+    correct_answer: "Jamie Foxx",
+    incorrect_answers: [
+    "Alec Baldwin",
+    "Dwayne Johnson",
+    " Bruce Willis"
+    ]
+    },
+    {
+    category: "Entertainment: Music",
+    type: "multiple",
+    difficulty: "easy",
+    question: "Who was featured in the song &quot;Words&quot; by Feint? ",
+    correct_answer: "Laura Brehm",
+    incorrect_answers: [
+    "Anna Yvette ",
+    "Danyka Nadeau",
+    "Veela"
+    ]
+    },
+    {
+    category: "Entertainment: Music",
+    type: "multiple",
+    difficulty: "easy",
+    question: "How many strings are there on a cello?",
+    correct_answer: "4",
+    incorrect_answers: [
+    "5",
+    "6",
+    "8"
+    ]
+    }
+    ]
+    }

@@ -1,0 +1,136 @@
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+body{
+  background-image: linear-gradient(rgb(0, 0, 36),rgb(3, 3, 66));
+  overflow-x: hidden;
+}
+.errlabel{
+  color: aqua;
+  font-weight: bold;
+  font-size: larger;
+  padding-top: 12px;
+}
+.imgerr{
+  text-align: center;
+    padding-top: 11em;
+}
+
+.btnn{
+  border: none;
+    background-color: aqua;
+    border-radius: 0.3rem;
+    padding: 6px 16px;
+}
+.btnn:hover{
+  box-shadow: 0 0 12px 0 cyan;
+}
+.dp{
+  width:23em;
+  display: flex;
+  flex-wrap: wrap;
+}
+.header{
+  display:flex;
+  justify-content: space-between;
+  padding: 1rem 4rem;
+  background-color: #000000c2;
+}
+.ts:hover{
+  text-shadow: 0 0 4px white;
+  cursor:pointer;
+}
+.srr{
+  font-size: larger;
+  font-weight: bold;
+}
+.nav{
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: cursive;
+  margin-bottom: 8px;
+}
+.pp{
+  background-color: antiquewhite;
+}
+.ll{
+  font-size: larger;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    font-family: 'PT Sans', sans-serif;
+}
+.scoo{
+  font-size: larger;
+    font-weight: bolder;
+    padding-bottom: 1em;
+}
+.mainlogo{
+  text-align: center;
+  font-size: 3rem;
+ 
+  color: #326acd;
+  font-family: cursive;
+}
+.load{
+  background-image: url("./components/bgg.jpg");
+  height:100vh;
+}
+.gameover{
+  position: fixed;
+  top:0;
+  z-index: 10;
+  width:100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0,0,0,0.5);
+}
+.card{
+  padding: 30px;
+  /* max-width: 80rem; used container but without you can use this instead*/ 
+  margin:auto;
+}
+.darkmode{
+  color:white
+}
+.quizbg{
+  background-color: #000000d9
+}
+.borderr{
+  border:2px solid rgb(1, 1, 20)
+}
+.quizselect{
+  max-width: 600px;
+  
+  padding: 30px;
+  margin: auto;
+  position: relative;
+  top: 70px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px 0 aqua;
+}
+.footr{
+  height: 3rem;
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 12px;
+}
+@media screen and (max-width:770px) {
+  .cardd{
+    background-color: transparent;
+    padding-top: 1rem;
+    max-width: 22rem;
+    margin: auto auto;
+  }
+  .quizselect{
+    max-width: 600px;
+  
+    padding: 30px;
+    margin: auto;
+    position: relative;
+    top: 70px;
+    border-radius: 8px;
+      box-shadow: none;
+  }
+}

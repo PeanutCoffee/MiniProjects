@@ -1,0 +1,20 @@
+{"short_name":"quizzer",
+    "name" :"quizz game"
+,
+"icons":[
+   { "src":"/images/logo.png",
+    "type":"image/png",
+    "sizes":"512x512",
+    "purpose": "any maskable"},
+    { "src":"/images/logo1.png",
+        "type":"image/png",
+        "sizes":"72x72",
+        "purpose": "any maskable"}
+],
+"start_url":".",
+"display":"standalone",
+"theme_color":"#000000",
+"background_color":"#ffffff"
+
+
+}
