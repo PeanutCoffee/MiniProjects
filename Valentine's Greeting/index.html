@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <title>Valentine's Challenge Week 💘</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Karla:wght@500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="card" id="card">
+            <p id="greeting-display">Greeting will go here</p>
+        </div>
+        
+        <form id="form">
+            <label for="recipient-input">To:</label>
+            <input type="text" oninput="writeGreeting()" id="recipient-input" name="recipient-input">
+            <br>
+            <label for="greeting-select">Select greeting:</label>
+            <select id="greeting-select" oninput="writeGreeting()">
+                <option value="">--Select greeting--</option>
+                <option value="I choo choo choose you! 🚂">"I choo choo choose you! 🚂"</option>
+                <option value="You are my sunshine! 🌞">"You are my sunshine! 🌞"</option>
+                <option value="Happy Valentine's! 💘">"Happy Valentine's! 💘",</option>
+                <option value="custom">Type your message! 💌</option>
+            </select>
+            <div id="custom" class="hidden">
+                <label for="custom-message">Your message:</label>    
+                <input type="text" oninput="writeGreeting()" id="custom-input" name="custom-input">
+            </div>
+            <br>
+            <label for="sender-input">From:</label>
+            <input type="text" oninput="writeGreeting()" id="sender-input" name="sender-input">
+        </form>
+        <script src="index.js"></script>
+    </body>
+</html>

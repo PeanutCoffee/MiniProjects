@@ -1,0 +1,73 @@
+:root {
+  --yellow: #FBF3AB;
+  --light-pink: #F0B9DD;
+  --lavender: #C7B9FF;
+  --deep-pink: #F04C86;
+  --raisin: #2B283A;
+  --white: #fff;
+}
+
+*, html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--lavender);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    font-family: 'Karla', sans-serif;
+}
+
+.card {
+    min-width: 270px;
+    border-radius: 5px;
+    background: var(--yellow);
+    font-size: 24px;    
+    padding: 1em;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.card p {
+   font-weight: 700;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+form * {
+   padding: .5em;
+   font-size: 1.3rem;
+   font-family: inherit;       
+}
+
+form label {
+   font-weight: 700;
+}
+
+form *:not(label) {
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    border-radius: 5px;
+    border: none;
+}
+
+#custom {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    margin-top: 25px;
+}
+
+#custom.hidden {
+    display: none;
+}

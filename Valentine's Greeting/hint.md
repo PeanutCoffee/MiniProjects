@@ -1,0 +1,2 @@
+- use the input event listener
+- use .textContent to render the message
