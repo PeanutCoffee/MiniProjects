@@ -1,0 +1,40 @@
+<html lang="en">
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <title>Valentine's Challenge Week 💘</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Karla:wght@500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <h1>Gift Selector 💝</h1>
+        <p class="result" id="result">Total gift cost: <span id="cost-el">...</span></p>
+        <form name="gift" id="gift" onsubmit="return calculate()" method="post" novalidate>
+            <label for="food-select">Select food:</label>
+            <select id="food-select" required>
+                <option value="">--Please select an option--</option>
+                <option value="5">🍓 strawberries - $5</option>
+                <option value="10">🍫 chocolate - $10</option>
+                <option value="20">🧁 cupcakes - $20</option>
+            </select>
+            <br>
+            <label for="transport-select">Select transport:</label>
+            <select id="transport-select" required>
+                <option value="">--Please select an option--</option>
+                <option value="5">🛼 rollerskates - $5</option>
+                <option value="50">🚘 limo - $50</option>
+                <option value="500">🚁 helicopter - $500</option>
+            </select>
+            <br>
+            <div>
+                <label id = "balloon" for="balloon-checkbox">Click to add🎈 - $1</label>            
+                <!--<input type="hidden" id="balloon-checkbox" name="balloon-checkbox" class="visually-hidden" value = "0">-->
+              <input type="checkbox" id="balloon-checkbox" name="balloon-checkbox" class="visually-hidden" value = "1">
+              <div class="add-balloon"></div>
+            </div>
+            
+            <button id="btn" type="button">Calculate</button>
+        </form>
+        <script src="index.js"></script>
+    </body>
+</html>

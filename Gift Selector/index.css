@@ -1,0 +1,105 @@
+:root {
+  --yellow: #FBF3AB;
+  --light-pink: #F0B9DD;
+  --lavender: #C7B9FF;
+  --deep-pink: #F04C86;
+  --raisin: #2B283A;
+  --white: #fff;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    color: var(--raisin);
+    background-color: var(--yellow);
+    padding: 2em;
+    font-family: 'Karla', sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+form * {
+   padding: .5em;
+   font-size: 1.3rem;
+   font-family: inherit;       
+}
+
+form label,
+form button {
+   font-weight: 700;
+}
+
+form *:not(label):not(div),
+.result {
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    border-radius: 5px;
+    border: none;
+}
+
+select { 
+    background: var(--white);
+    color: var(--raisin);    
+}
+
+.result {
+    background: var(--light-pink);
+    color: var(--raisin);
+    min-width: 270px;
+    max-width: 5ch;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 1em;
+    font-size: 1.5rem;
+}
+
+.result span {
+    color: var(--deep-pink);
+    font-weight: 700;
+}
+
+button {
+    color: var(--white);
+    background: var(--deep-pink);
+}
+
+button:hover,
+button:focus {
+    transform: scale(1.02);
+    cursor: pointer;  
+}
+
+.add-balloon::after {
+    content: "🎈";
+    font-size: 35px;
+}
+#balloon-checkbox:checked ~ .add-balloon::after {
+    content: "";
+    justify-content: center;
+    align-items: center;
+}
+
+#balloon {
+    background: #A5D6A7;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.visually-hidden {
+    position: absolute;
+    left: -100vw;
+}
