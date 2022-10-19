@@ -1,0 +1,10 @@
+.main{
+    background-color:#F0F2F5 ;
+    height: 100%;
+}
+.main2{
+    background-color:#F0F2F5 ;
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+}
