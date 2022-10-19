@@ -10,7 +10,7 @@
 </head>
 
 <body>
-
+<button class="dark" onclick="darkMode()">Darkmode</button>
     <section class="calculator">
         <form>
             <input type="text" class="screen">
@@ -45,6 +45,12 @@
 
     <script src=" app.js">
 
+    </script>
+    <script>
+        function darkMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
     </script>
 </body>
 
