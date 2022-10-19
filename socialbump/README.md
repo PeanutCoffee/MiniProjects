@@ -1,5 +1,5 @@
 <h1>SocialBump</h1>
-<h6>https://socialbump.herokuapp.com/<h6>
+<h6>https://socialbump.herokuapp.com<h6>
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
