@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Team Reporter</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/report.css">
+    <link rel="stylesheet" href="./css/team.css">
+</head>
+
+<body>
+    <header>
+        <div class="banner">
+            <div id="myNav" class="overlay">
+                <a class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <!-- <a href="#"><i class="fas fa-sign-in-alt"></i> Sign In</a>
+                    <a href="#"><i class="fas fa-user-plus"></i> Sign Up</a> -->
+                    <a href="./login.html"><i class="fas fa-home"></i> Home</a>
+                    <a id="logoutBtn" class="logoutBtn" href=""><i class="fas fa-sign-in-alt"></i> Log Out</a>
+                </div>
+            </div>
+            <span class="user-circle" onclick="openNav()"><i class="far fa-user-circle"></i> </span>
+
+            <div class="mainHead text-success text-center mt-2 container-sm">
+                <a href="report.html">
+                    <h5 class="header" id="reports"><button type="button" class="btn btn-outline-secondary text-light"><i class="far fa-list-alt"></i> Reports</button></h5>
+                </a>
+                <a href="team.html">
+                    <h5 class="header" id="settings"><button type="button" class="btn active btn-outline-secondary"><i class="fas fa-cog"></i> Settings</button></h5>
+                </a>
+            </div>
+
+            <div class="container">
+                <hr>
+                <div id="mainHead">
+                    <h3 id="teamName"></h3>
+                </div>
+
+                <hr>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-secondary mb-2 mt-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <!-- <i class="bi bi-plus"></i> -->
+                    Add Question
+                </button>
+                <!-- questions -->
+                <div class="container" id="questions">
+                    <h5>Questions :</h5>
+                </div>
+
+                <!-- questions display -->
+                <div class="container">
+
+                    <ul id="questionUl" class="list-group">
+
+
+                    </ul>
+                </div>
+
+
+                <!-- Modal for add members-->
+                <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content ">
+                            <div class="modal-header">
+                                <h5 id="addMembersHead" class="mt-2">Add Members</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="mt-3">
+                                    <ul class="membersUl" id="membersUl">
+
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button id="addMembers" onclick="addMembersFunc()" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Add</button>
+                                <!-- <button type="button" class="btn btn-secondary">Save changes</button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- teamsMembers -->
+                <hr>
+                <!-- Button trigger modal -->
+                <h4>Members :</h4>
+                <div class="teamMembers">
+                    <ul id="teamMembers">
+                        <!-- <li>user1</li>
+                            <li>user2</li> -->
+                    </ul>
+                </div>
+
+                <div class="memberHead">
+                    <button id="modalBBtn" type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                        Add Members
+                    </button>
+                </div>
+                <div id="deleteTeamDiv">
+                    <button type="button" id="${i}" onclick="deleteTeamFunc(this.id)" class="btn btn-danger">
+                        Delete Team
+                    </button>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content ">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Add Question</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <!-- input box -->
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" id="questionInp" placeholder="Type Question">
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button id="addQuestionBtn" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Add</button>
+                                <!-- <button type="button" class="btn btn-">Save changes</button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+
+    <footer>
+        <div class="divff">
+            <p> &copy; Copyright 2021 <b>Team Reporter</b> All Rights Reserved. Designed &amp; Developed with <i class="fas fa-heart"></i> by M Saim Raza <a href="/index.html">Home</a></A>
+            </p>
+        </div>
+        <!-- <a class="nav-bar" href=""><abbr title="Muhammad Saim Raza">M-M-M</abbr></a> -->
+    </footer>
+
+
+
+    <!--Sweet Alert JS  -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <!-- Custom JS  -->
+    <script src="./js/custom.js"></script>
+    <script src="./js/team.js"></script>
+</body>
+
+</html>
