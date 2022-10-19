@@ -1,0 +1,178 @@
+#mainHead {
+    text-align: center;
+    margin-top: 12px;
+}
+
+#teamName,
+#questions {
+    color: aliceblue;
+    text-decoration: underline;
+}
+
+#teamMembers {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    /* border: 1px solid #ccc; */
+    height: 100px;
+    justify-content: center;
+    margin-top: 10px;
+    height: auto;
+}
+
+#teamMembers li {
+    padding: 4px 10px;
+    background-color: rgb(255, 255, 255);
+    height: 39px;
+    margin: 4px 10px;
+    color: rgb(82, 82, 82);
+    width: 150px;
+    text-align: center;
+    border-radius: 20px;
+    /* cursor: pointer; */
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    border: 1px solid #ccc;
+    font-weight: 500;
+}
+
+.fa-user-times {
+    cursor: pointer;
+    /* background-color: aqua; */
+    padding: 4px 7px;
+}
+
+#questionUl {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    border: dotted;
+}
+
+#questionUl li {
+    border: dotted;
+    margin: 2% 25%;
+    background: transparent;
+    padding: 5% 3%;
+    width: 50%;
+}
+
+.list-group-item div {
+    color: aliceblue;
+    font-weight: bold;
+}
+
+.answer {
+    margin: 10px 0px;
+    border: none;
+    border-bottom: 1px solid #ccc !important;
+}
+
+textarea:focus,
+textarea.form-control:focus,
+input.form-control:focus,
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
+input[type=number]:focus,
+[type=text].form-control:focus,
+[type=password].form-control:focus,
+[type=email].form-control:focus,
+[type=tel].form-control:focus,
+[contenteditable].form-control:focus {
+    box-shadow: inset 0 -1px 0 #ddd;
+}
+
+#questions {
+    margin-top: 10px;
+}
+
+.bi-trash {
+    cursor: pointer;
+    /* background-color: blue; */
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.membersUl {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.membersUl li {
+    padding: 5px 18px;
+    border: 1px solid #ccc;
+    margin: 4px 10px;
+    border-radius: 16px;
+    width: 120px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.membersUl li:hover {
+    background-color: rgb(44, 44, 44);
+    color: rgb(240, 240, 240);
+    cursor: pointer;
+    border: 1px solid rgb(56, 56, 56);
+}
+
+#teamMembers li {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 10px;
+}
+
+.fa-user-times {
+    margin-right: -29px;
+    /* background-color: rgb(170, 71, 71); */
+}
+
+.memberHead {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#modalBBtn {
+    margin-bottom: 10px;
+    width: 300px !important;
+}
+
+#deleteTeamDiv {
+    display: flex;
+    justify-content: center;
+}
+
+#deleteTeamDiv button {
+    margin-bottom: 20px;
+    width: 300px;
+}
+
+@media screen and (max-width: 570px) {
+    #questionUl li {
+        /* background-color: rgb(151, 94, 94); */
+        width: 98%;
+    }
+    #teamMembers {
+        margin-left: -20px;
+    }
+    .btn-primary {
+        width: 95%;
+        margin-left: 8px;
+    }
+    #teamMembers li {
+        /* width: 40vw; */
+        /* font-weight: 500; */
+        font-size: 18px;
+    }
+    #deleteTeamDiv button {
+        margin-left: 8px;
+    }
+    #submitBtn {
+        width: 97%;
+        margin-left: 6px;
+    }
+}
