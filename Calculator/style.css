@@ -9,7 +9,7 @@
     height: 500px;
     box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.3);
     border-radius: 12px;
-    background-color: #113f67;
+    background-color: #000000;
     overflow: hidden;
 }
 
@@ -51,6 +51,7 @@ button {
     font-weight: 600;
     border-radius: 5px;
     cursor: pointer;
+    text-align: center;
 }
 
 .btn-yellow {
@@ -69,6 +70,7 @@ button {
 
 .btn-clear {
     background: red;
+    text-align: center;
 }
 
 .label {
@@ -85,4 +87,22 @@ button {
 
 .fa-sun {
     color: #f39c12;
+}
+
+.dark-mode {
+      background-color: black;
+      color: white;
+
+}
+
+.dark{
+    margin-bottom: 700px;
+    margin-left: 300px;
+    text-align: center;
+
+}
+
+.dark:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255)
 }
