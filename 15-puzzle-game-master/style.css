@@ -1,0 +1,55 @@
+body{
+  background: linear-gradient(to top left, #ffffcc 0%, #ff6600 100%);
+}
+.game{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border:5px  #660000 ridge;
+}
+.box{
+  border: 1px solid black;
+  width: 340px;
+}
+
+.tile16{
+  color: #f2e6d9;
+}
+
+#row1 button ,#row2 button,#row3 button,#row4 button{
+  background-color: #f2e6d9;
+  width: 75px;
+  height: 75px;
+  font-size: 30px;
+  font-weight: bold;
+  margin:5px;
+  border:3px solid black;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.footer{
+  background-color: #4d0000;
+  width: 340px;
+}
+.footer button{
+  background-color: yellow;
+  font-size: 15px;
+  margin:12px 10px 10px 15px;
+  color: black;
+  padding: 5px 13px 5px 13px;
+  border-radius: 8px;
+  cursor: pointer;
+  height: 40px;
+  font-weight: bold;
+}
+.footer button:hover{
+  color:white;
+  //margin:8px 10px 10px 18px;
+  background-color: black;
+}
+.footer span{
+  color: yellow;
+  margin: 18px 18px;
+  font-weight: bold;
+}
