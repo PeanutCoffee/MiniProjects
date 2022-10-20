@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Key Detection</title>
+  <script type="text/javascript" src="http://www.cornify.com/js/cornify.js"></script>
+</head>
+<body>
+<script>
+// When someone inputs a sequence of keys then something needs to happen. Example: the KONAMI CODE up up down down b a b a -- unlimited lives
+// Works on buzzfeed -- easter egg
+// code - up up down down left right left right b a enter
+
+const pressed = [];
+const secretCode = 'manuarora'
+window.addEventListener('keyup', (e) => {
+	pressed.push(e.key);
+	pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length);
+	if(pressed.join('').includes(secretCode)) {
+		console.log("INCLUDESSSSS");
+		cornify_add();
+	}
+	console.log(pressed);
+})
+</script>
+</body>
+</html>
