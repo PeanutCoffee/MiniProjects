@@ -1,0 +1,47 @@
+<html>
+<head>
+  <title>
+    15 PUZZLE
+  </title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+  <h1 align="center">15 Puzzle</h1>
+  <div class="game">
+  <div class="box" style="display: table;">
+    <div id="row1" style="display: table-row;">
+      <button id="cell11" class="tile1" onClick="clickTile(1,1);">1</button>
+      <button id="cell12" class="tile2" onClick="clickTile(1,2);">2</button>
+      <button id="cell13" class="tile3" onClick="clickTile(1,3);">3</button>
+      <button id="cell14" class="tile4" onClick="clickTile(1,4);">4</button>
+    </div>
+    <div id="row2" style="display: table-row;">
+      <button id="cell21" class="tile5" onClick="clickTile(2,1);">5</button>
+      <button id="cell22" class="tile6" onClick="clickTile(2,2);">6</button>
+      <button id="cell23" class="tile7" onClick="clickTile(2,3);">7</button>
+      <button id="cell24" class="tile8" onClick="clickTile(2,4);">8</button>
+    </div>
+    <div id="row3" style="display: table-row;">
+      <button id="cell31" class="tile9" onClick="clickTile(3,1);">9</button>
+      <button id="cell32" class="tile10" onClick="clickTile(3,2);">10</button>
+      <button id="cell33" class="tile11" onClick="clickTile(3,3);">11</button>
+      <button id="cell34" class="tile12" onClick="clickTile(3,4);">12</button>
+    </div>
+    <div id="row4" style="display: table-row;">
+      <button id="cell41" class="tile13" onClick="clickTile(4,1);">13</button>
+      <button id="cell42" class="tile14" onClick="clickTile(4,2);">14</button>
+      <button id="cell43" class="tile15" onClick="clickTile(4,3);">15</button>
+      <button id="cell44" class="tile16" onClick="clickTile(4,4);">16</button>
+    </div>
+  </div>
+  <div class="footer">
+    <button id="play-button" onclick="shuffle();">Play</button>
+    <span id="span">Move: 0</span>
+    <span id="time">Time = 0:0</span>
+  </div>
+</div>
+<!-- <p id="countdown">10:00</p> -->
+  <script type="text/javascript" src="alert.js">
+  </script>
+</body>
+</html>
