@@ -1,0 +1,23 @@
+{
+  "name": "todolist-v1",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yash Gupta",
+  "license": "ISC",
+  "engines": {
+    "node": "14.15.3"
+  },
+
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "lodash": "^4.17.20",
+    "mongoose": "^5.11.11",
+    "nodemon": "^2.0.7"
+  },
+  "description": ""
+}
