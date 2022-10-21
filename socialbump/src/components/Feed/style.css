@@ -1,0 +1,183 @@
+/* createPost */
+.createPost {
+  display: flex;
+  justify-content: center;
+}
+.createPost-main {
+  display: flex;
+  background-color: #fff;
+  width: 50%;
+  padding: 15px;
+  border-radius: 16px;
+  margin-top: 30px;
+  box-shadow: 4px 2px 10px #ccc;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.createPost-top {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+.createPost-top form {
+  background-color: whitesmoke;
+  padding: 10px;
+  border-radius: 20px;
+  margin-left: 10px;
+  flex: 1;
+}
+.createPost-top form input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  font-size: medium;
+}
+.createPost-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid lightgray;
+  margin-top: 15px;
+}
+.createPost-option {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  border-radius: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.createPost-option:hover {
+  background-color: whitesmoke;
+}
+.createPost-option p {
+  margin-left: 10px;
+}
+/* Modal */
+.modal-pop{
+  top: 50%;
+  background-color: #fff;
+  width: 500px;
+  margin: 0px auto;
+  position: relative;
+  transform: translateY(-50%);
+  padding: 10px;
+  border-radius: 10px;
+}
+.modalHeading{
+  text-align: center;
+  border-bottom: 1px solid lightgray;
+  height: 40px;
+}
+.modalHeading .MuiIconButton-root{
+  position: absolute;
+  top: 0px;
+  right: 5px;
+}
+.modalHeader-top{
+  display: flex;
+  padding: 15px 0px;
+  align-items: center;
+}
+.modalHeader-top h5{
+  margin-left: 10px;
+}
+.modalBody .MuiTextField-root{
+  width: 100% ;
+  min-height: 100px ;
+  font-size: 25px  ;
+  padding: 10px 0px ;
+  letter-spacing: 1px ;
+}
+.modalBody .MuiInputBase-root{
+  font-size: 20px ;
+  letter-spacing: 1px;
+}
+.modalFooter{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  margin-bottom:20px ;
+  padding: 0px 10px;
+}
+.post-submit{
+  width: 100%;
+  background: linear-gradient(to right, #8e2de2, #4a00e0);
+  padding:10px 20px;
+  color: #fff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: 0px;
+  outline: opx;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Post */
+.post {
+  background-color: #ffffff;
+  width: 50%;
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 10px;
+}
+.post-top {
+  display: flex;
+  justify-content: space-between;
+}
+.post-topLeft {
+  display: flex;
+  align-items: center;
+}
+.postInfo {
+  margin-left: 10px;
+}
+.postInfo p {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.postInfo h4 {
+  margin: 0;
+}
+.postInfo-option {
+  border-radius: 20px;
+  cursor: pointer;
+  /* padding: 0 10px; */
+}
+.postInfo-option:hover {
+  background-color: #f5f5f5;
+}
+.post-center p {
+  margin: 20px opx;
+}
+.post-center img {
+  width: 100%;
+}
+
+/* post-bottom  */
+.post-bottom {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid lightgray;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+.post-option {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  cursor: pointer;
+  padding: 0 10px;
+}
+.post-option:hover {
+  background-color: #f5f5f5;
+}
+.post-option p {
+  margin-left: 5px;
+}

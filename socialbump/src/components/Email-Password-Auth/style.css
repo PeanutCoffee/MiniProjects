@@ -1,0 +1,36 @@
+.paper {
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.avatar {
+  margin: 8px;
+  background-color: #8e2de2 !important;
+}
+form {
+  width: 100%;
+  margin-top: 8px;
+}
+.submit {
+  background: linear-gradient(to right, #8e2de2, #4a00e0);
+  margin: 24px 0px 16px !important;
+  color: #fff;
+}
+.card {
+  margin-top: 60px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+}
+.pointer {
+  cursor: pointer;
+  color: #4a00e0;
+  text-decoration: none;
+}
+.pointer-sm {
+  font-size: 13px;
+  cursor: pointer;
+  color: #4a00e0;
+  text-decoration: none;
+}

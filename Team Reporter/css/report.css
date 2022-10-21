@@ -1,0 +1,40 @@
+.banner {
+    background-image: url(../images/login.png);
+}
+
+#reportsSec {
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.mainHead {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0 !important;
+    padding-top: 10px;
+    margin-bottom: -10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    color: aliceblue !important;
+}
+
+.btn-outline-secondary {
+    width: 300px !important;
+}
+
+.mainHead a {
+    color: aliceblue;
+}
+
+#reportsSec p {
+    color: aliceblue;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 570px) {
+    .btn-outline-secondary {
+        width: 40vw !important;
+    }
+}

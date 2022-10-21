@@ -1,0 +1,184 @@
+header {
+    height: 100%;
+}
+
+#mainHead {
+    text-align: center;
+    margin-top: 12px;
+    /* border-bottom: 1px solid #ccc; */
+    /* background-color: rgb(124, 82, 82); */
+}
+
+#teamMembers {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    /* border: 1px solid #ccc; */
+    height: 100px;
+    justify-content: center;
+    margin-top: 10px;
+    height: auto;
+}
+
+#teamMembers li {
+    padding: 4px 10px;
+    background-color: rgb(255, 255, 255);
+    height: 39px;
+    margin: 4px 10px;
+    color: rgb(82, 82, 82);
+    width: 150px;
+    text-align: center;
+    border-radius: 20px;
+    /* cursor: pointer; */
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    border: 1px solid #ccc;
+    font-weight: 500;
+}
+
+.fa-user-times {
+    cursor: pointer;
+    /* background-color: aqua; */
+    padding: 4px 7px;
+}
+
+#questionUl {
+    min-height: 240px;
+    /* margin-left: 100px; */
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    /* border: 1px solid #ccc; */
+}
+
+#questionUl li {
+    /* background-color: rgb(151, 94, 94); */
+    border: none;
+    border-bottom: 1px solid #ccc !important;
+    margin: 10px 10px;
+    width: 380px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#questions {
+    margin-top: 10px;
+}
+
+.fa-trash {
+    cursor: pointer;
+    /* background-color: blue; */
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.membersUl {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#teamName,
+#questions,
+h4 {
+    text-transform: uppercase;
+    /* text-align: center; */
+    color: aliceblue;
+    text-decoration: underline;
+}
+
+.membersUl li {
+    padding: 5px 18px;
+    border: 1px solid #ccc;
+    margin: 4px 10px;
+    border-radius: 16px;
+    width: 120px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.membersUl li:hover {
+    background-color: rgb(44, 44, 44);
+    color: rgb(240, 240, 240);
+    cursor: pointer;
+    border: 1px solid rgb(56, 56, 56);
+}
+
+#teamMembers li {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 10px;
+}
+
+.fa-user-times {
+    margin-right: -29px;
+    /* background-color: rgb(170, 71, 71); */
+}
+
+.memberHead {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#modalBBtn {
+    margin-bottom: 10px;
+    width: 300px !important;
+}
+
+#deleteTeamDiv {
+    display: flex;
+    justify-content: center;
+}
+
+#deleteTeamDiv button {
+    margin-bottom: 20px;
+    width: 300px;
+}
+
+@media screen and (max-width: 570px) {
+    #questionUl li {
+        /* background-color: rgb(151, 94, 94); */
+        width: 98%;
+    }
+    #teamMembers {
+        margin-left: -20px;
+    }
+    .btn-secondary {
+        width: 95%;
+        margin-left: 8px;
+    }
+    #teamMembers li {
+        /* width: 40vw; */
+        /* font-weight: 500; */
+        font-size: 18px;
+    }
+    .fa-user-times {
+        /* margin-right: -10px; */
+        /* background-color: rgb(170, 71, 71); */
+    }
+    #deleteTeamDiv button {
+        margin-left: 8px;
+    }
+    .header {
+        font-size: 16px !important;
+        /* background-color: aqua; */
+    }
+    .btn-outline-secondary {
+        width: 40vw !important;
+    }
+    /* #settings{
+        border-bottom: 1px solid rgb(17, 17, 17);
+    
+    } */
+    /* .header:hover{
+        border-bottom: 1px solid rgb(17, 17, 17);
+    }
+    
+    #settings{
+        border-bottom: 1px solid rgb(17, 17, 17);
+    
+    } */
+}
