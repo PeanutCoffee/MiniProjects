@@ -43,3 +43,16 @@ footer {
 .sizeDecreaser {
   font-size: 7rem;
 }
+.reset{
+  position: relative;
+  left: 660px ;
+  top: 50px;
+  font-size: 20px;
+  width: 130px;
+  background-color: #393E46;
+  color: #4ECCA3;
+  
+}
+.reset:hover{
+  background-color: black;
+}
