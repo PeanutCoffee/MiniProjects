@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <title>To-do</title>
+  </head>
+  <body>
+    <div class="flex justify-center">
+      <h1 class="text-4xl text-indigo-600 font-bold">Oh Crud!</h1>
+    </div>
+    <p class="text-center">Things I forgot to do:</p>
+
+    <div class="inline-flex items-center justify-center w-full my-5">
+      <form action="javascript:void(0);" method="POST" onsubmit="app.Add()">
+        <input
+          type="text"
+          value=""
+          placeholder="Things to do"
+          class="border rounded-sm border-indigo-600 px-1 mx-2"
+          id="add-todo"
+        />
+        <input
+          type="submit"
+          value="Add"
+          class="bg-blue-600 text-white border rounded-md px-3 py-1 cursor-pointer hover:bg-indigo-600"
+        />
+      </form>
+    </div>
+    <div>
+      <p class="text-center">You have:</p>
+      <p id="counter" class="text-center"></p>
+    </div>
+
+    <table class="flex justify-center mt-10 mb-2">
+      <tr class="">
+        <th><h3 class="text-3xl">To-do:</h3></th>
+      </tr>
+      <tbody id="tasks"></tbody>
+    </table>
+
+    <div
+      id="edit-box"
+      role="aria-hidden"
+      class="flex justify-center w-full hidden"
+    >
+      <form action="javascript:void(0);" method="POST" id="save-edit">
+        <input
+          type="text"
+          id="edit-todo"
+          class="border rounded-sm border-indigo-600 p-1 mx-2"
+        />
+        <input
+          type="submit"
+          value="Save"
+          class="border rounded-md px-2 py-1 bg-green-600 hover:green-700 text-white cursor-pointer"
+        />
+        <a class="cursor-pointer" onclick="CloseInput()" aria-label="Close">
+          &#10006;</a
+        >
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>
