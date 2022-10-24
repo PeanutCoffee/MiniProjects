@@ -1,0 +1,36 @@
+Choose any one challenge from the three (3) options given below. You could choose to develop a browser-based web application or a native mobile application.
+You are free to use any technology, framework, programming language(s), database(s), and cloud platform of your choice.
+
+Face Recognition
+  Develop a browser-based application or a native mobile application to demonstrate the application of Face Recognition technology.
+
+  You could choose to demonstrate the application of Face Recognition in any area of application of your choice, for example:
+
+  - Preventing crime 
+  - Device security
+  - Smarter advertising
+  - Finding mission people or lost pets
+  - Diagnose diseases
+  - Tracking attendance
+  - Facilitate secure transactions
+  - You are free to choose any Face API you are comfortable with.
+  
+Data Analysis
+  Develop an application to demonstrate how the Automotive Industry could harness data to make informed decisions.
+
+  You could choose to use the data set provided, use any open-source data set available you might have access to, or create your own.
+
+  - Download sample Dataset
+  - Demonstrate the use of data analytics in identifying:
+  - Customer segments, Most popular car specification combination (engine type, fuel, mileage, etc), Right time to launch a new car, etc
+  - Any other queries you can think of
+
+Algorithms
+  Demonstrate through your app the different kinds of algorithms that a web-streaming app (like Netflix) or an audio-streaming app (like Spotify) may use for their Recommendation Engine.
+
+  Focus on any algorithm that you choose to highlight, for example:
+
+  - Demonstrate what kind of role would a sorting algorithm play in a Recommendation Engine?
+  - What is the most efficient sorting algorithm to use in this scenario, and why?
+  - Demonstrate what kind of role would a search algorithm play in a Recommendation Engine? Which search algorithm does your app use, and why?
+  - Any other algorithm that you can think of.
