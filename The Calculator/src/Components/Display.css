@@ -1,0 +1,49 @@
+#Display {
+  background      : #e61e5f;
+  background      : -moz-linear-gradient(
+    -45deg,
+    #e61e5f 10%,
+    #f73773 80%
+  );
+  padding         : 3rem 1rem;
+  border-radius   : 5px 5px 0 0;
+  border-bottom   : 1px solid #fa6594;
+  color           : hsl(230, 96%, 95%);
+  text-align      : center;
+  cursor          : default;
+  display         : flex;
+  flex-direction  : column;
+  justify-content : center;
+}
+
+  #Display h1 {
+    font-size     : 3rem;
+    margin        : 0 0 1rem 0;
+    font-weight   : 400;
+    color         : #ffc7d9;
+  }
+  
+    #Display h1.hasManyDecimals {
+      font-size: 2.5rem;
+    }
+
+  #Display small {
+    font-size     : 1rem;
+    font-style    : italic;
+    color         : #ffc7d9;
+  }
+
+@media ( max-width: 499px ) {
+  #Display {
+    height        : 35vh;
+    margin        : 0;
+    padding       : 0;
+    border-radius : 0;
+  }
+  
+  #Display h1 {
+    font-size     : 3rem;
+    margin        : 0;
+  }
+
+}

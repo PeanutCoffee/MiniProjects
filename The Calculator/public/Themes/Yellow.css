@@ -1,0 +1,109 @@
+body {
+  color             : hsl(230, 100%, 90%);
+  background        : hsl(220, 30%, 30%);
+  background        : -moz-radial-gradient(
+                      center,
+                      ellipse cover,
+                      #344c7e 20%,
+                      #283b60 80%
+  );
+  background        : -webkit-radial-gradient(
+                      center,
+                      ellipse cover,
+                      #344c7e 20%,
+                      #283b60 80%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background        : radial-gradient(
+                      ellipse at center,
+                      #344c7e 20%,
+                      #283b60 80%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter            : progid:DXImageTransform.Microsoft.gradient(
+                      startColorstr='#344c7e',
+                      endColorstr='#283b60',
+                      GradientType=1
+  ); /* IExplorer */
+}
+
+  #Calculator {
+    background      : hsl(230, 30%, 20%);
+    color           : #e6b71e;;
+    border          : 1px solid hsl(230, 34%, 30%);
+  }
+
+  #Display {
+    background      : #e7c144;
+    background      : -moz-linear-gradient(
+      -45deg,
+      #e6b71e 10%,
+      #e7c144 80%
+    );
+    background      : -webkit-linear-gradient(
+        -45deg,
+        #e6b71e 10%,
+        #e7c144 80%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background      : linear-gradient(
+        to 135deg,
+        #e6b71e 10%,
+        #e7c144 80%
+    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter          : progid:DXImageTransform.Microsoft.gradient(
+        startColorstr='#e7c144',
+        endColorstr='#e6b71e',
+        GradientType=0
+    ); /* IExplorer */
+    border-bottom   : 1px solid #e4d49f;
+    color           : hsl(230, 30%, 20%);
+  }
+
+    #Display h1 {
+      color         : hsl(230, 30%, 20%);
+    }
+
+    #Display small {
+      color         : hsl(230, 30%, 20%);
+    }
+
+  .brand {
+    color           : #e7e2d2;
+  }
+
+    .brand .highlighted {
+      color         : #e6b71e;
+    }
+
+  #Pads .container .sym {
+    color           : #e7e2d2;
+  }
+
+  #Pads .container .pad:hover, #Pads .container .pad:active {
+    background      : #e6b71e;
+    color           : hsl(230, 30%, 20%);
+  }
+
+  #Pads .menu {
+    color           : #e7e2d2;
+  }
+
+    #Pads .menu .goBack {
+      border-bottom : 1px solid hsl(220, 30%, 30%);
+      border-top    : 1px solid hsl(220, 30%, 30%);
+      color         : #e6b71e;
+    }
+
+    #Pads .menu .goBack:hover {
+      color         : #e7e2d2;
+    }
+
+    #Pads .menu h6 {
+      color         : #e7e2d2;
+    }
+
+    #Pads .menu a:link, #Pads .menu a:visited {
+      color         : #e7e2d2;
+    }
+
+    #Pads .menu a:hover {
+      color         : #e6b71e;
+    }

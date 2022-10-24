@@ -1,0 +1,19 @@
+.brand {
+  font-family : 'Kaushan Script', cursive;
+  font-size   : 1.2rem;
+  text-align  : center;
+  color       : hsl(230, 100%, 90%);
+  margin      : 0;
+  padding     : 0.5rem 0;
+  cursor      : default;
+}
+
+  .brand .highlighted {
+    color     : #e61e5f;
+  }
+
+@media ( max-width: 499px ) {
+  .brand {
+    height    : 5vh;
+  }
+}

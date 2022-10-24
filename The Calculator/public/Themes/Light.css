@@ -1,0 +1,113 @@
+body {
+  color             : #404040;
+  background        : #ffffff;
+  background        : -moz-radial-gradient(
+                      center,
+                      ellipse cover,
+                      #ffffff 20%,
+                      #cecece 80%
+  );
+  background        : -webkit-radial-gradient(
+                      center,
+                      ellipse cover,
+                      #ffffff 20%,
+                      #cecece 80%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background        : radial-gradient(
+                      ellipse at center,
+                      #ffffff 20%,
+                      #cecece 80%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter            : progid:DXImageTransform.Microsoft.gradient(
+                      startColorstr='#ffffff',
+                      endColorstr='#cecece',
+                      GradientType=1
+  ); /* IExplorer */
+}
+
+  #Calculator {
+    background      : #404040;
+    color           : #ffffff;
+    border          : none;
+  }
+
+  #Display {
+    background      : #cecece;
+    background      : -moz-linear-gradient(
+      -45deg,
+      #ffffff 10%,
+      #cecece 80%
+    );
+    background      : -webkit-linear-gradient(
+        -45deg,
+        #ffffff 10%,
+        #cecece 80%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background      : linear-gradient(
+        to 135deg,
+        #ffffff 10%,
+        #cecece 80%
+    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter          : progid:DXImageTransform.Microsoft.gradient(
+        startColorstr='#cecece',
+        endColorstr='#ffffff',
+        GradientType=0
+    ); /* IExplorer */
+    border-bottom   : 1px solid #ffffff;
+    color           : #404040;
+  }
+
+    #Display h1 {
+      color         : #404040;
+    }
+
+    #Display small {
+      color         : #404040;
+    }
+
+  .brand {
+    color           : #ffffff;
+  }
+
+    .brand .highlighted {
+      color         : #cecece;
+    }
+
+  #Pads .container .sym {
+    color           : #ffffff;
+  }
+
+  #Pads .container .pad {
+    border          : 1px solid #404040;
+  }
+
+  #Pads .container .pad:hover, #Pads .container .pad:active {
+    background      : #ffffff;
+    color           : #404040;
+  }
+
+  #Pads .menu {
+    color           : #ffffff;
+  }
+
+    #Pads .menu .goBack {
+      border-bottom : 1px solid #cecece;
+      border-top    : 1px solid #cecece;
+      color         : #ffffff;
+    }
+
+    #Pads .menu .goBack:hover {
+      color         : #cecece;
+    }
+
+    #Pads .menu h6 {
+      color         : #ffffff;
+    }
+
+    #Pads .menu a:link, #Pads .menu a:visited {
+      color         : #ffffff;
+    }
+
+    #Pads .menu a:hover {
+      color         : #cecece;
+    }

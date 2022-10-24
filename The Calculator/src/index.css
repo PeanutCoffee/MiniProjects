@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Kaushan+Script');
+
+/* Prettify the testing button */
+#hamburger_top, #hamburger_middle, #hamburger_bottom {
+  background: hsl(230, 30%, 20%) !important;
+}
+#fcc_foldout_toggler_background {
+  background: none !important;
+}
+
+:root, * {
+  box-sizing        : border-box;
+}
+
+html {
+  height            : 100vh;
+  width             : 100vw;
+}
+
+body {
+  margin            : 0;
+  padding           : 0;
+  height            : 100vh;
+  width             : 100vw;
+  display           : flex;
+  flex-direction    : column;
+  justify-content   : center;
+  align-items       : center;
+  font-family       : 'Josefin Sans', sans-serif;
+  font-size         : 1.5rem;
+  color             : hsl(230, 100%, 90%);
+  background        : hsl(220, 30%, 30%);
+  background        : radial-gradient(
+                      ellipse at center,
+                      #344c7e 20%,
+                      #283b60 80%
+  );
+}
+
+/* Calculator */
+#Calculator {
+  display           : flex;
+  flex-direction    : column;
+  width             : 400px;
+  background        : hsl(230, 30%, 20%);
+  border-radius     : 5px;
+  color             : #e61e5f;
+  border            : 1px solid hsl(230, 34%, 30%);
+  box-shadow        : hsla(230, 30%, 0%, 0.3) 0px 0px 50px;
+  overflow          : hidden;
+}
+
+@media ( max-width: 499px ) {
+  #Calculator {
+    height          : 100vh;
+    width           : 100%;
+    border-radius   : 0;
+    border          : none;
+    box-shadow      : none;
+  }
+}
