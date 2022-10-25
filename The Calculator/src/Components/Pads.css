@@ -1,0 +1,108 @@
+#Pads {
+  display           : flex;
+  width             : 100%;
+}
+
+  #Pads .container, #Pads .menu {
+    padding         : 1rem;
+    width           : 100%;
+    height          : 100%;
+    flex-shrink     : 0;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    flex-wrap       : wrap;
+    transition      : transform 300ms;
+    transform       : translateX(0);
+  }
+
+  #Pads .hide {
+    transform       : translateX(-100%);
+  }
+
+  #Pads .menu {
+    color           : hsl(220, 41%, 80%);
+    height          : 100%;
+    align-content   : start; 
+  }
+
+    #Pads .menu .goBack {
+      font-size     : .8rem;
+      padding       : 1rem 0;
+      cursor        : pointer;
+      width         : 100%;
+      border-bottom : 1px solid hsl(220, 30%, 30%);
+      border-top    : 1px solid hsl(220, 30%, 30%);
+      color         : #e61e5f;
+    }
+
+      #Pads .menu .goBack:hover {
+        color         : hsl(230, 100%, 90%);
+      }
+
+      #Pads .menu h6 {
+        font-size       : 1.2rem;
+        text-align      : center;
+        margin          : 0;
+        padding         : 1rem 0;
+        font-family     : 'Kaushan Script', cursive;
+        color           : hsl(230, 100%, 90%);
+      }
+
+      #Pads .menu p {
+        font-size       : 1rem;
+        line-height     : 1.4rem;
+        margin          : 0;
+        padding         : .3rem 0;
+      }
+
+      #Pads .menu a:link, #Pads .menu a:visited {
+        font-size       : 1rem;
+        text-decoration : underline;
+        color           : hsl(230, 100%, 90%);
+      }
+      
+      #Pads .menu a:hover {
+        color           : #e61e5f;
+        transition      : color 300ms;
+      }
+
+  #Pads .container .pad, #Pads .container .menuToggler {
+    text-align      : center;
+    flex-grow       : 1;
+    flex-shrink     : 0;
+    flex-basis      : 21%;
+    padding         : 1.5rem 0rem;
+    cursor          : pointer;
+    border          : 1px solid hsl(230, 30%, 20%);
+    border-radius   : 5px;
+    transition      : color 300ms, background-color 300ms;
+  }
+
+    #Pads .container .sym {
+      color         : hsl(230, 100%, 90%);
+    }
+
+    #Pads .container .pad:hover, #Pads .container .pad:active {
+      background    : #e61e5f;
+      color         : hsl(230, 30%, 20%);
+    }
+
+@media ( max-width: 499px ) {
+  #Pads{
+    height          : 60vh;
+  }
+
+  #Pads .container {
+    padding         : 1rem;
+    height          : 100%;
+    align-items     : center;
+  }
+
+  #Pads .container .pad {
+    padding         : 1rem 0rem;
+    border          : none;
+    border-radius   : none;
+  }
+
+}

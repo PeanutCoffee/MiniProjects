@@ -1,0 +1,109 @@
+body {
+  color             : hsl(230, 100%, 90%);
+  background        : hsl(220, 30%, 30%);
+  background        : -moz-radial-gradient(
+                      center,
+                      ellipse cover,
+                      #344c7e 20%,
+                      #283b60 80%
+  );
+  background        : -webkit-radial-gradient(
+                      center,
+                      ellipse cover,
+                      #344c7e 20%,
+                      #283b60 80%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background        : radial-gradient(
+                      ellipse at center,
+                      #344c7e 20%,
+                      #283b60 80%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter            : progid:DXImageTransform.Microsoft.gradient(
+                      startColorstr='#344c7e',
+                      endColorstr='#283b60',
+                      GradientType=1
+  ); /* IExplorer */
+}
+
+  #Calculator {
+    background        : hsl(230, 30%, 20%);
+    color             : #69b5f3;;
+    border            : 1px solid hsl(230, 34%, 30%);
+  }
+
+  #Display {
+    background      : #4dacfa;
+    background      : -moz-linear-gradient(
+      -45deg,
+      #1e8ce6 10%,
+      #4dacfa 80%
+    );
+    background      : -webkit-linear-gradient(
+        -45deg,
+        #1e8ce6 10%,
+        #4dacfa 80%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background      : linear-gradient(
+        to 135deg,
+        #1e8ce6 10%,
+        #4dacfa 80%
+    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter          : progid:DXImageTransform.Microsoft.gradient(
+        startColorstr='#4dacfa',
+        endColorstr='#1e8ce6',
+        GradientType=0
+    ); /* IExplorer */
+    border-bottom   : 1px solid #69b5f3;
+    color           : #d5e7f7;
+  }
+
+    #Display h1 {
+      color         : #d5e7f7;
+    }
+
+    #Display small {
+      color         : #d5e7f7;
+    }
+
+  .brand {
+    color       : #d5e7f7;
+  }
+
+    .brand .highlighted {
+      color     : #69b5f3;
+    }
+
+  #Pads .container .sym {
+    color         : #d5e7f7;
+  }
+
+  #Pads .container .pad:hover, #Pads .container .pad:active {
+    background    : #69b5f3;
+    color         : hsl(230, 30%, 20%);
+  }
+
+  #Pads .menu {
+    color           : #d5e7f7;
+  }
+
+    #Pads .menu .goBack {
+      border-bottom : 1px solid hsl(220, 30%, 30%);
+      border-top    : 1px solid hsl(220, 30%, 30%);
+      color         : #69b5f3;
+    }
+
+    #Pads .menu .goBack:hover {
+      color         : #d5e7f7;
+    }
+
+    #Pads .menu h6 {
+      color         : #d5e7f7;
+    }
+
+    #Pads .menu a:link, #Pads .menu a:visited {
+      color         : #d5e7f7;
+    }
+
+    #Pads .menu a:hover {
+      color           : #69b5f3;
+    }
