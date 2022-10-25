@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>Pomodoro</title>
+</head>
+
+<body>
+    <h1>Pomodoro Timer</h1>
+
+    <div id="container">
+        <!-- labels -->
+        <p id="work" class="label"> Work </p>
+        <p id="cycle" class="label"> Cycle </p>
+        <p id="break" class="label"> Break </p>
+
+        <!--Work timer  -->
+
+
+        <div id="work-timer" class="timer">
+            <p id="w_minutes">25</p>
+            <p class="semicolon">:</p>
+            <p id="w_seconds">00</p>
+        </div>
+
+        <p id="counter" class="timer">0</p>
+
+        <div id="break-timer" class="timer">
+            <p id="b_minutes">5</p>
+            <p class="semicolon">:</p>
+            <p id="b_seconds">00</p>
+        </div>
+
+        <button id="start" class="btn">Start</button>
+        <button id="reset" class="btn">Reset</button>
+        <button id="pause" class="btn">Pause </button>
+
+
+
+
+    </div>
+
+    <footer>
+        
+            
+
+                <button id="footer-btn">IEEE Newspaper</button>
+           
+        
+            <div class="footer-copyrights">
+                <p>| Copyright &copy; 2021 | All Rights Reserved | MSIT Virtual Library |</p>
+            </div>
+
+            <div class="footer-social-links">
+                <a class="social-a" href="#">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
+                <a class="social-a" href="#">
+                    <i class="fab fa-facebook fa-2x"></i>
+                </a>
+                <a class="social-a" href="#">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </a>
+                <a class="social-a" href="#">
+                    <i class="fab fa-twitter fa-2x"></i>
+                </a>
+            </div>
+       
+    </footer>
+
+    <script src="main.js">main.js</script>
+
+</body>
+
+</html>
