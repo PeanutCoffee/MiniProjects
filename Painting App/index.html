@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Painting App</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="main-container">
+      
+        <div class="colors">
+          <button value="#FBFF00"></button>
+          <button value="#009fff"></button>
+          <button value="#000000"></button>
+          <button value="#FF0000"></button>
+          <button value="#3EFF00"></button>
+          <button value="#FFF"></button>
+        </div>
+
+        <input id="brush" type="range" value="1" min="1" max="5" step="1"></input>
+        <button id="clear" type="button">Clear</button>
+        <button id="save" type="button">Save</button>
+        <br>
+        <canvas id="paint-canvas" width="640" height="400"></canvas>
+
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
