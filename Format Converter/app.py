@@ -24,16 +24,34 @@ def detect_format(filename: str) -> str:
     }
     return ext_map.get(ext, '')
 
+def md_to_html(md_text: str) -> bytes:
+    return markdown.markdown(md_text).encode()
+
+def md_to_docx(md_text: str) -> bytes:
+    with tempfile.NamedTemporaryFile(delete=False, suffix='.docx') as tmp_file:
+        output_path = tmp_file.name
+    try:
+        pypandoc.convert_text(md_text, 'docx', format='md', outputfile=output_path)
+        with open(output_path, 'rb') as f:
+            docx_bytes = f.read()
+    finally:
+        os.remove(output_path)
+    return docx_bytes
+
+def md_to_json(md_text: str) -> dict:
+    segments = [seg.strip() for seg in md_text.split('\n\n') if seg.strip()]
+    return {"segments": segments}
+
 def md_to_pdf(md_text: str) -> bytes:
     html = markdown.markdown(md_text)
     config = pdfkit.configuration(wkhtmltopdf="C:\\Program Files\\wkhtmltopdf\\bin\\wkhtmltopdf.exe")
     return pdfkit.from_string(html, False, configuration=config)
 
 CONVERSION_MAP = {
-    # ('markdown', 'html'): md_to_html,
+    ('markdown', 'html'): md_to_html,
     ('markdown', 'pdf'): md_to_pdf,
-    # ('markdown', 'docx'): md_to_docx,
-    # ('markdown', 'json'): md_to_json,
+    ('markdown', 'docx'): md_to_docx,
+    ('markdown', 'json'): md_to_json,
     # ('html', 'markdown'): html_to_md,
     # ('html', 'pdf'): html_to_pdf,
     # ('html', 'docx'): html_to_docx,
@@ -90,7 +108,7 @@ async def convert_document(file: UploadFile = File(...), target_format: str = Fo
             tmp_path,
             media_type=mime_types.get(target_format, 'application/octet-stream'),
             filename=f"converted{suffix}",
-            background=None  # Optionally add background task to delete file after
+            background=None
         )
     
     media_type = mime_types.get(target_format, 'application/octet-stream')
