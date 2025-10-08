@@ -110,6 +110,31 @@ def html_to_docx(html: str) -> bytes:
     buf.seek(0)
     return buf.read()
 
+def docx_to_md(docx_bytes: bytes) -> bytes:
+    temp_path = "temp.docx"
+    with open(temp_path, "wb") as f:
+        f.write(docx_bytes)
+    md = pypandoc.convert_file(temp_path, 'md', format='docx')
+    os.remove(temp_path)
+    return md.encode()
+
+def pdf_to_json(pdf_bytes: bytes) -> dict:
+    temp_path = "temp.pdf"
+    with open(temp_path, "wb") as f:
+        f.write(pdf_bytes)
+    text = extract_text(temp_path)
+    os.remove(temp_path)
+    return {"text": text}
+
+def pdf_to_md(pdf_bytes: bytes) -> bytes:
+    temp_path = "temp.pdf"
+    with open(temp_path, "wb") as f:
+        f.write(pdf_bytes)
+    text = extract_text(temp_path)
+    os.remove(temp_path)
+    md = "\n\n".join(text.split('\n'))
+    return md.encode()
+
 CONVERSION_MAP = {
     ('markdown', 'html'): md_to_html,
     ('markdown', 'pdf'): md_to_pdf,
@@ -118,9 +143,9 @@ CONVERSION_MAP = {
     ('html', 'markdown'): html_to_md,
     ('html', 'pdf'): html_to_pdf,
     ('html', 'docx'): html_to_docx,
-    # ('docx', 'markdown'): docx_to_md,
-    # ('pdf', 'json'): pdf_to_json,
-    # ('pdf', 'markdown'): pdf_to_md,
+    ('docx', 'markdown'): docx_to_md,
+    ('pdf', 'json'): pdf_to_json,
+    ('pdf', 'markdown'): pdf_to_md,
 }
 
 @app.post("/convert")
